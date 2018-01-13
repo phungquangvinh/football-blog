@@ -1,0 +1,824 @@
+body
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto', sans-serif;
+}
+a:visited, a
+{
+	font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1230px;
+    width: 100%;
+}
+#header {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.background {
+	background-image: url(images/02HOME_02.png);
+	min-height: 130px;
+	background-repeat: no-repeat;
+}
+.logo {
+	float: left;
+	padding: 20px 0 0 20px;
+}
+.text {
+    float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.text1 {
+	color: #feea01;
+	margin: 30px 10px 0 0;
+}
+.text2 {
+	color: #ff003a;
+	margin: -10px 10px 0 0;
+	float: right;
+}
+.menu li{
+    display: inline;
+	float: left;
+	padding: 0;
+	line-height: 50px;
+}
+.menu li:first-child {
+    border-left: medium none;
+}
+.menu a{
+	color: #fff; 
+	text-decoration: none;
+	display: block;
+	padding: 0 16px;
+}
+.menu li:first-child a {
+    background-image: url(images/icon_home.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 36px;
+}
+.menu a:hover {
+	color: yellow;
+}
+/* bat dau drop menu */
+.dropbtn {
+    color: #fff;
+	padding: 5px 23px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0090cd;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	min-width: 100px;
+}
+
+.menu .dropdown-content a {
+	line-height: 30px;
+}
+
+.dropdown-content a:hover {
+	
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+}
+/* ket thuc drop menu */
+.menu ul {
+  float: left;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 12px;
+}
+.menu{
+	background-image: url(images/sidebar-heading.png);
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+.text-search {
+    background-color: #e9e9ea;
+    border: 1px solid #fff;
+    color: #7d7d7d;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 10px;
+    width: 262px;
+}
+.menu form {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: relative;
+}
+.submit {
+  background-color: transparent;
+  background-image: url(images/icon-search.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: medium none;
+  height: 38px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 42px;
+  cursor: pointer;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  clear: both;
+  position: relative;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+.mySlides.fade > img {
+  height: 500px;
+  width: 100%;
+}
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.main {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.content {
+  float: left;
+  font-size: 16px;
+}
+.title-dichvu {
+	background-image: url(images/01HOME_06.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 87%;
+}
+.dichvu {
+	margin: 30px;
+	float: left;
+	width: 320px;
+}
+.dichvu img{
+	width: 100%;
+}
+
+.dichvu p {
+    color: #686868;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+}
+.dichvu > h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+.dichvu a {
+    background-color: #058ce0;
+    color: #fff;
+    padding: 5px 25px;
+    text-decoration: none;
+}
+.baohanh {
+	float: left;
+	font-family: 'Roboto', sans-serif;
+	width: 245px;
+	margin-top: 50px;
+	color: #686868;
+}
+.baohanh > a {
+    color: #bd0a0a;
+	margin-left: 20px;
+}
+.baohanh > h4 {
+    margin-left: 20px;
+}
+.baohanh img{
+	margin-left: 10px;
+}
+.baohanh h3{
+	margin: -35px 0 0 55px;
+}
+.bando {
+	margin: 10px 0px;
+	float: right;
+}
+.brand {
+	width: 98%; float: left;
+	margin: 30px 15px;
+}
+.title-logo {
+	background-image: url(images/01HOME_06.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 90%;
+}
+.list-logo ul{
+	padding: 0;
+}
+.list-logo li{
+    display: inline;
+	margin-left: 5px;
+}
+.list-logo li:first-child{
+	margin-left: 0;
+}
+.list-logo img{
+	width: 16%;
+}
+.footer {
+	margin: 0;
+}
+.image01{
+	margin-bottom: -20px;
+}
+.footer-menu{
+	background-image: url(images/00HOME_03.png);
+	color: #fff; width: 100%;
+	margin: 0 auto; float: left; height: 288px;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.footer-menu a{
+	font-size: 16px;
+}
+.footer-menu h3{
+	font-weight: normal;
+	font-size: 20px;
+}
+.lienhe{
+	float: left;
+	padding: 0 35px;
+	width: 24%;
+	margin-top: 30px;
+}
+.lienhe ul{
+	font-family: 'Roboto', sans-serif;
+	margin-left: -25px;
+}
+.lienhe h3{
+	position: relative;  
+	font-family: 'Roboto', sans-serif;
+}
+.lienhe a{
+	color: white; text-decoration: none;
+}
+.lienhe a:hover{
+	color: #0294ee;
+}
+.dichvuchinh, .chinhsach {
+	float: left;
+	padding: 30px;
+	width: 23%;
+}
+.dichvuchinh ul{
+	font-family: 'Roboto', sans-serif;
+	margin-left: -25px;
+}
+.dichvuchinh a{
+	color: white; text-decoration: none;
+}
+.dichvuchinh a:hover{
+	color: #0294ee;
+}
+.chinhsach ul{
+	font-family: 'Roboto', sans-serif;
+	margin-left: -25px;
+}
+.chinhsach a{
+	color: white;
+	text-decoration: none;
+}
+.chinhsach a:hover{
+	color:#0294ee;
+}
+.mail {
+    float: left;
+    height: 100%;
+    padding: 30px;
+    width: 30%;
+}
+.mail form {
+   margin-bottom: 20px;
+   width: 243px;
+}
+.text-search1 {
+    background-color: #e9e9ea;
+    border: 1px solid #fff;
+    color: #7d7d7d;
+    font-size: 14px;
+    height: 38px;
+    padding-left: 10px;
+    width: 200px;
+}
+.submit1 {
+    border: medium none;
+    float: right;
+    height: 38px;
+    width: 42px;
+	cursor: pointer;
+}
+.mangxahoi li{
+    display: inline;
+}
+.mangxahoi li:first-child {
+	margin-left: -40px;
+}
+.end{
+	background-color: #2f343a;
+	margin: 0 auto; height: 80px;
+	width: 100%;
+	float: left;
+}
+.end ul{
+	margin-left: -30px;
+}
+.end li{
+    display: inline;   
+    padding: 5px 13px;
+	border-color: black;
+}
+.end a{
+	color: white;
+	text-decoration: none;
+}
+.end a:hover{
+	color: #0294ee;
+}
+.end p {
+	margin: 0 0 0 20px;
+	float: left;
+	color: #fff;
+}
+@media only screen and (max-width: 1024px) {
+	.sidebar{
+		font-size: 14px;
+		margin-left: 10px;
+	}
+	.list-logo li {
+		margin-left: 4px;
+	}
+	.lienhe{
+		padding: 0 25px;
+	}
+	.dichvuchinh, .chinhsach {
+		padding: 30px 20px;
+	}
+	.mail {
+		padding: 30px 10px 0 10px;
+	}
+	.end{
+		text-align: center;
+	}
+	.end p{
+		float: none;
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+    body {
+		width: 100%;
+    }
+	.background {
+		background-size: 100%;
+	}
+	.menu ul {
+		padding-left: 12px;
+		font-size: 12px;
+		width: 72%;
+	}
+	.menu li:first-child a{
+		padding-left: 32px;
+	}
+	.menu a {
+		padding: 0px 10px;
+	}
+	.dropbtn {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	.menu form{
+		margin-right: 5px;
+		width: 27%;
+	}
+	.text-search{
+		width: 100%;
+	}
+	.submit {
+		width: 30px;
+	}
+	.container {
+		width: 100%;
+	}
+	.sidebar{
+		width: 26%;
+		font-size: 14px;
+	}
+	.title-menu1, .title-menu2, .title-menu3, .title-menu4{
+		padding: 5px;
+	}
+	.list-menu1, .list-menu2, .list-menu3, .list-menu4{
+		padding-left: 20px;
+	}
+	.list-menu4 img {
+		margin: 0;
+	}
+	.dichvu h3{
+		font-size: 17px;
+	}
+	.dichvu p{
+		font-size: 14px;
+	}
+	.dichvu img {
+		width: 100%;
+	}
+	.content{
+		padding-left: 18px;
+		width: 72%;
+	}
+	.dichvu2, .dichvu4{
+		margin-right: 10px;
+	}
+	.title-dichvu {
+		background-size: 85%;
+		margin-right: 20px;
+	}
+	.baohanh {
+		margin-top: 0;
+	}
+	.bando{
+		margin: 10px 10px;
+		width: 95%;
+	}
+	.bando iframe {
+		width: 100%;
+	}
+	.brand {
+		width: 100%;
+		margin: 0;
+	}
+	.title-logo{
+		background-size: 85%;
+		margin: 0 20px;
+	}
+	.list-logo{
+		width: 100%;
+	}
+	.list-logo img{
+		margin: -2px;
+	}
+	.dichvu h3 {
+		font-size: 15px;
+	}
+	.footer-menu {
+		margin: 0 auto;
+		font-size: 5px;
+		padding-bottom: 20px;
+	}
+	.lienhe {
+		float: left;
+		padding: 0 15px;
+		width: 51%;
+	}
+	.footer-menu a {
+		font-size: 14px;
+		color: #fff;
+	}
+	.footer-menu h3{
+		font-size: 16px;
+	}
+	.dichvuchinh {
+		float: left;
+		padding: 30px 10px;
+		width: 49%;
+	}
+	.chinhsach {
+		float: left;
+		padding: 0 15px;
+		width: 50%;
+		margin-left: 0;
+	}
+	.mail{
+		width: 50%;
+		padding: 0;
+		margin-left: 0;
+	}
+	.mail form {
+		width: 95%;
+	}
+	.text-search1 {
+		width: 80%;
+		height: 30px;
+		font-size: 13px;
+		border: none;
+	}
+	.submit1 {
+		margin: 0;
+		height: 30px;
+		font-size: 11px;
+		width: 19%;
+	}
+	.mangxahoi img {
+		width: 15%;
+	}
+}
+@media only screen and (max-width: 736px) {
+	.dropbtn {
+		padding: 5px 8px;
+	}
+	.dichvu h3{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 667px) {
+	.background{
+		background-size: auto 100%;
+	}
+	.menu a {
+		padding: 0px 5px;
+	}
+	.dropbtn {
+		padding: 5px 5px;
+		font-size: 12px; 
+	}
+	.dichvu h3{
+		font-size: 17px;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.menu{
+		background-size: 4%;
+	}
+	.menu ul{
+		width: 100%;
+	}
+	.menu li{
+		border: none;
+	}
+	.menu a{
+		font-size: 14px;
+		padding: 0px 11px;
+	}
+	.dropbtn {
+		padding: 5px 13px;
+		font-size: 14px;
+	}
+
+	.menu form {
+		margin-right: 70px;
+		bottom: 10px;
+		width: 45%;
+	}
+}
+@media only screen and (max-width: 568px) {
+	.menu li:first-child a {
+		padding-left: 40px;
+	}
+	.dropbtn{
+		padding: 5px 6px;
+	}
+	.end {
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 414px) {
+    body {
+		width: 100%;
+    }
+	.background {
+		background-size: auto 100%;
+		background-position: center center;
+		min-height: 100px;
+	}
+	.logo{
+		width: 30%;
+	}
+	.logo img{
+		width: 75px;
+		margin: -5px 0 0 -5px;
+	}
+	.text{
+		width: 70%;
+	}
+	.text1 {
+		font-size: 15px;
+		text-align: end;
+		margin-top: 0;
+	}
+	.text2 {
+		font-size: 15px;
+		margin-top: -25px;
+	}
+	.dropbtn {
+		padding: 5px 13px;
+		display: block;
+	}
+	.menu li:first-child a{
+		position: relative;
+		top: 5px;
+	}
+	.menu form{
+		width: 60%;
+	}
+	.text-search{
+		width: 100%;
+	}
+	.container{
+		width: 100%;
+		padding: 0 15px;
+	}
+	.mySlides.fade > img {
+		height: 200px;
+		width: 100%;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.sidebar h3{
+		font-size: 14px;
+	}
+	.sidebar a{
+		font-size: 13px;
+	}
+	.sidebar ul{
+		padding: 3px;
+	}
+	.sidebar li{
+		display: block;
+	}
+	.sidebar1, .sidebar2{
+		width: 48%;
+	}
+	.sidebar1{
+		float: left;
+		margin-top: 10px;
+	}
+	.sidebar2{
+		float: right;
+	}
+	.list-menu4{
+		padding: 5px;
+	}
+	.list-menu4 img{
+		width: 20%;
+		margin: 0;
+	}
+	.tuvan h4{
+		font-size: 13px;
+	}
+	.image123 {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		width: 100%;
+		padding: 0;
+	}
+	.dichvu {
+		width: 100%;
+	}
+	.dichvu > h3 {
+		font-size: 20px;
+		font-weight: normal;
+	}
+	.dichvu img{
+		width: 100%;
+	}
+	.title-dichvu {
+		background-size: 75%;
+	}
+	.bando{
+		width: 100%;
+		margin: 0;
+	}
+	.bando > iframe {
+		width: 100%;
+		height: 200px;
+	}
+	.brand {
+		width: 100%;
+		margin: 0;
+		padding: 0 15px;
+	}
+	.title-logo {
+		background-size: 70%;
+	}
+	.list-logo img{
+		width: 32%;
+	}
+	.list-logo li{
+		margin: 0;
+	}
+	.footer-menu a{
+		font-size: 13px;
+	}
+	.footer-menu h3{
+		font-size: 14px;
+	}
+	.mangxahoi img {
+		width: 16%;
+	}
+	.end {
+		height: 100px;
+	}
+}
+@media only screen and (max-width: 379px){
+	.menu a{
+		padding: 0px 10px;
+		line-height: 30px;
+	}
+	.dropbtn {
+		line-height: 30px;
+	}
+
+	.end li:nth-child(3){
+		margin-right: 101px;
+	}
+}
+@media only screen and (max-width: 320px){
+	.end li:nth-child(3){
+		margin-right: 70px;
+	}
+}
