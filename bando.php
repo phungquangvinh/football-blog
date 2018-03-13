@@ -1,7 +1,7 @@
 <div class="baohanh">
-	<img src="images/03HOME.png"><h3>ĐỊA ĐIỂM LIÊN HỆ</h3>
+	<img src="images/03HOME.png"><h3>ĐỊA ĐIỂM LIÊN HỆ</h3><br>
 	<h4>Địa chỉ: Công ty TNHH giải pháp pm Tntechs, Thái Nguyên</h4>
-	<p>Điện thoại: 043.5744572</p>
+	<p style="color: #f00">Điện thoại: 043.5744572</p>
 	<h4>Email: support@gmail.com</h4>
 </div>
 <div class="bando">

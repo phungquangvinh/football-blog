@@ -10,6 +10,13 @@ include('function.php');
 session_start();
 $user = $matkhau = "";
 $userErr = $matkhauErr = "";
+
+if(isset($_SESSION['ten'])){
+    if($_SESSION['ten'] != 'admin'){
+        header("Location: user");
+    } else header("Location: admin");
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["user"])) {
     $userErr = "Bạn phải nhập username!";

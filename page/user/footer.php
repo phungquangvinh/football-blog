@@ -26,8 +26,8 @@
 	<div class="chinhsach">
 		<h3>BLOG & QUẢNG CÁO</h3>
 		<ul>
-			<li style="margin-top: 10px;"><a href="page">Đăng nhập</a></li>
-			<li style="margin-top: 10px;"><a href="page/user">Vào forum</a></li>
+			<li style="margin-top: 10px;"><a href="../">Đăng nhập</a></li>
+			<li style="margin-top: 10px;"><a href="index.php">Vào forum</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ quảng cáo</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ 1</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ 2</a></li>
@@ -49,9 +49,9 @@
 </div>
 <div class="end">
 	<ul>
-		<li><a href="index.php">HOME</a></li>
+		<li><a href="/football-blog">HOME</a></li>
 		<li><a href="#">TIN TỨC</a></li>
-		<li><a href="giaidau.php?giaidau=6">THỂ THAO VIỆT NAM</a></li>
+		<li><a href="/football-blog/giaidau.php?giaidau=6">THỂ THAO VIỆT NAM</a></li>
 		<li><a href="#">CUP CHÂU ÂU</a></li>
 		<li><a href="page">BLOG</a></li>
 		<li><a href="#">LIÊN HỆ</a></li>

@@ -5,13 +5,15 @@ body
 }
 
 .gioithieu {
-	width: 300px;
-	margin-left: 30px;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	float: left;
 }
 .baiviet{
-	float: right;
+	float: left;
 	font-family: arial;
+	padding-right: 30px;
 }
 .user{
     width: 300px;

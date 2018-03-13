@@ -5,7 +5,7 @@
  * @copyright 2017
  */
 
-$username = "vinh"; // Khai báo username
+$username = "root"; // Khai báo username
 	$password = "";      // Khai báo password
 	$server   = "localhost";   // Khai báo server
 	$dbname   = "football";      // Khai báo database
