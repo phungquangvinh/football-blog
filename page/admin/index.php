@@ -8,7 +8,7 @@
 include ('config.php');
 session_start();
 if(empty($_SESSION['ten']) || empty($_SESSION['pass'])){
-    header("Location: http://localhost/football-blog/page");
+    header("Location: ".HOME."/page");
  } else if($_SESSION['ten']!='admin'){
     header("Location: error.php");
 }

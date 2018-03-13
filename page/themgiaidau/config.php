@@ -4,7 +4,7 @@
  * @author pqvinh
  * @copyright 2017
  */
-
+define("HOME", "http://localhost/football-blog");
 $username = "vinh"; // Khai báo username
 	$password = "";      // Khai báo password
 	$server   = "localhost";   // Khai báo server

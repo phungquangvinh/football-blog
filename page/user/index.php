@@ -8,9 +8,9 @@
 include 'form.php';
 
  if(empty($_SESSION['ten'])){
-    header('Location: http://localhost/football-blog/page');
+    header("Location: ".HOME."/page");
  } else if($_SESSION['ten']=='admin'){
-    header("Location: http://localhost/football-blog/page/admin/error.php");
+    header("Location: ".HOME."/page/admin/error.php");
  }
 ?>
 <!doctype html>
