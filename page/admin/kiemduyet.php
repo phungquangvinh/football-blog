@@ -4,10 +4,12 @@
  * @author pqvinh
  * @copyright 2017
  */
-include('config.php'); session_start();
-if(empty($_SESSION['ten'])){
-    header('Location: http://localhost/football-blog/page');
- }
+include('../../config.php'); session_start();
+if(empty($_SESSION['ten']) || empty($_SESSION['pass'])){
+    header("Location: ../");
+ } else if($_SESSION['ten']!='admin'){
+    header("Location: error.php");
+}
 $id = $_GET["id"];
 $sql = "SELECT * FROM bai_viet where id='$id'";
 $ket_qua = mysqli_query($connect, $sql);
@@ -21,6 +23,7 @@ while ($row = mysqli_fetch_array($ket_qua)){
 </head>
 <body>
     <h3>Duyệt bài viết người dùng: <?php echo $row["user"];?></h3>
+    <a href="acc.php">Quản lý thành viên</a><br /><br />
     <a href="index.php">Trở về trang quản trị</a><br /><br />
     <form action="upload.php?id=<?php echo $id;?>" method="post" name="image" enctype="multipart/form-data">
         Tiêu đề bài viết: <input type="text" id="" name="title" value="<?php echo $row["tieu_de"]?>"/>

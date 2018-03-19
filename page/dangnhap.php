@@ -5,7 +5,7 @@
  * @copyright 2017
  */
  ob_start();
-include('config.php');
+include('../config.php');
 include('function.php');
 session_start();
 $user = $matkhau = "";
@@ -62,10 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['id'] = $ket_qua;
     }
     if($ket_qua == 1){
-        header('location:admin/index.php');
-    } else header('location:user/index.php');
+        header('location: admin');
+    } else header('location: user');
    } 
 }
-
 
 ?>

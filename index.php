@@ -38,7 +38,7 @@
                 $file = $abc. $image;
              ?>
         <div class="dichvu">
-          <img src="<?= $file ?>" style="300px"/>                    
+          <img src="<?= $file ?>" style="height: 200px;"/>                    
           <h3><?php echo $row["tieu_de"];?></h3>
           <p><?php echo $row["bai_viet"];?></p>
           <a href="page/admin">CHI TIẾT</a>

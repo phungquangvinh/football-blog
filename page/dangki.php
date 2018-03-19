@@ -18,11 +18,12 @@ if(isset($_SESSION['ten'])){
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<meta name="author" content="pqvinh" />
     <title>Đăng kí tài khoản mới</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <style>
     .error {color: #FF0000;}
 </style>
-<body>
+<body style="padding-left: 30px">
 <h2>Đăng kí tài khoản mới!</h2>
 <p><span class="error">Dấu * là trường bắt buộc.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
@@ -39,7 +40,7 @@ if(isset($_SESSION['ten'])){
     <span class="error">* <?php echo $matkhau1Err;?></span>
     <br><br>
     <input type="submit" name="submit" value="Gửi"/><br />
-    <br /><a href="/football-blog">Trở về trang chủ</a>
+    <br /><a href="../">Trở về trang chủ</a>
 </form>
 </body>
 </html>

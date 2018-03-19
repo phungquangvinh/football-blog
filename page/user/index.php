@@ -4,8 +4,8 @@
  * @author pqvinh
  * @copyright 2017
  */
- include 'config.php';
-include 'form.php';
+ include '../../config.php';
+include '../../form.php';
 
  if(empty($_SESSION['ten'])){
     header("Location: ".HOME."/page");
@@ -36,8 +36,8 @@ include 'form.php';
         </div>
         <div class="main">
             <p>Chào mừng '<?php echo $_SESSION['ten']; ?>' đến với trang blog bóng đá! 
-            <a href="destroy.php">Đăng xuất</a>!</p>
-            <a href="/football-blog">Trở về trang chủ</a>
+            <a href="../destroy.php">Đăng xuất</a>!</p>
+            <a href="../../">Trở về trang chủ</a>
             <h3>Đăng bài để đưa ra cảm nhận của bạn...</h3>
             <p class="error">Dấu * là trường bắt buộc.</p>
             <form action="upload.php" method="post" name="image" enctype="multipart/form-data">
@@ -64,7 +64,7 @@ include 'form.php';
             </form>
             <br><br>
             <div id="bando">
-                <?php include 'bando.php';?>
+                <?php include '../../bando.php';?>
             </div>
         </div>
         <div class="brand">

@@ -61,7 +61,7 @@ include 'form.php';
                         <img src="<?= $file ?>" style="300px"/>                    
     					<h3><?php echo $row2["tieu_de"];?></h3>
     					<p><?php echo $row2["bai_viet"];?></p>
-    					<a href="/football-blog/page/admin">CHI TIẾT</a>                    
+    					<a href="page/admin">CHI TIẾT</a>                    
                     </div>	<?php }}
                         else echo "<br><br>"."Không có kết quả tìm kiếm với từ <b>'$search'</b>";
                     }}?>			

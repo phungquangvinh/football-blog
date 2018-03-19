@@ -5,7 +5,7 @@
  * @copyright 2017
  */
 ob_start();
-include('config.php');
+include('../config.php');
 include('function.php');
 //tạo form
 $user = $email = $matkhau = $matkhau1 = "";
@@ -73,9 +73,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     VALUES ('$user', '$email', '$matkhau')";
     
     if (mysqli_query($connect, $sql)) {
-    echo "Đăng kí thành công!";
+    echo "<br>"."Đăng kí thành công!";
     ?>
-    <a href="/football-blog">Quay trở lại trang chủ</a> 
+    <a href="../">Quay trở lại trang chủ</a> 
     <?php
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($connect);

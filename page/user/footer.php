@@ -8,7 +8,7 @@
 		<ul>
 			<li style="margin-top: 10px;"><a href="#">Đội tuyển Quốc gia</a></li>
 			<li style="margin-top: 10px;"><a href="#">Các giải trẻ</a></li>
-			<li style="margin-top: 10px;"><a href="#">V-LEAGUE</a></li>
+			<li style="margin-top: 10px;"><a href="../../giaidau.php?giaidau=6">V-LEAGUE</a></li>
 			<li style="margin-top: 10px;"><a href="#">AFF CUP 2016</a></li>
 			<li style="margin-top: 10px;"><a href="#">Các môn thể thao khác</a></li>
 			<li style="margin-top: 10px;"><a href="#">Bàn luận</a></li>
@@ -19,7 +19,7 @@
         <ul>
             <?php while ($row2 = mysqli_fetch_array($result2)){
 			    ?><li style="margin-top: 10px;">
-			    <a href="giaidau.php?giaidau=<?php echo $row2["id"]?>"><?php echo $row2["ten_giai_dau"];?></a></li><?php
+			    <a href="../../giaidau.php?giaidau=<?php echo $row2["id"]?>"><?php echo $row2["ten_giai_dau"];?></a></li><?php
 			}?>
         </ul>		
 	</div>
@@ -30,7 +30,7 @@
 			<li style="margin-top: 10px;"><a href="index.php">Vào forum</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ quảng cáo</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ 1</a></li>
-			<li style="margin-top: 10px;"><a href="#">Liên hệ 2</a></li>
+			<li style="margin-top: 10px;"><a href="/vinh/t-electronics">Liên hệ 2</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ 3</a></li>
 		</ul>
 	</div>
@@ -49,11 +49,11 @@
 </div>
 <div class="end">
 	<ul>
-		<li><a href="/football-blog">HOME</a></li>
+		<li><a href="../../">HOME</a></li>
 		<li><a href="#">TIN TỨC</a></li>
-		<li><a href="/football-blog/giaidau.php?giaidau=6">THỂ THAO VIỆT NAM</a></li>
+		<li><a href="#">THỂ THAO VIỆT NAM</a></li>
 		<li><a href="#">CUP CHÂU ÂU</a></li>
-		<li><a href="page">BLOG</a></li>
+		<li><a href="../">BLOG</a></li>
 		<li><a href="#">LIÊN HỆ</a></li>
 	</ul>
 	<p>&copy 2017 Store. All Rights Reserved. Designer by<a target="_blank" href="http://gmail.com" style="color: #0395f0"> v96hoangtucodon@gmail.com</a></p>

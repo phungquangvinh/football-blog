@@ -4,7 +4,15 @@
  * @author GallerySoft.info
  * @copyright 2017
  */
- include 'config.php';
+ include '../../config.php'; session_start();
+if(empty($_SESSION['ten']) || empty($_SESSION['pass'])){
+    header("Location: ../");
+ } else if($_SESSION['ten']!='admin'){
+    header("Location: error.php");
+}
+
+
+
  $title = $write = $image = "";
  $id = $_GET["id"];
 $target_dir = "images/";
@@ -36,7 +44,7 @@ if(isset($_POST["submit"])) {
             echo "Chỉnh sửa thành công!";
         }
         ?><br /><br />
-        <a href="http://localhost/football-blog/page/admin">Trở về trang quản trị!</a>
+        <a href="index.php">Trở về trang quản trị!</a>
         <?php
     }
 }
@@ -55,14 +63,14 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
     echo "File của bạn không thể upload.<br>";
-    ?><a href="http://localhost/football-blog/page/admin">Trở về trang quản trị!</a><?php
+    ?><a href="index.php">Trở về trang quản trị!</a><?php
 // if everything is ok, try to upload file
 }  else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "File ảnh ". basename( $_FILES["fileToUpload"]["name"]). " up thành công.<br>";
     } else {
         echo "Không thể up được file<br>";
-        ?><br /><a href="http://localhost/football-blog/page/admin">Trở về trang quản trị!</a><?php
+        ?><br /><a href="index.php">Trở về trang quản trị!</a><?php
     }
 } 
 

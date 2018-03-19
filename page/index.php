@@ -13,12 +13,12 @@ include 'dangnhap.php';
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ðăng nhập tài khoản</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <style>.error {color: #ff0000;}</style>
 </head>
 
-<body>
+<body style="padding-left: 30px">
     <h1>Ðăng nhập tài khoản</h1>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         Tên nguời dùng: <input type="text" name="user"/>
@@ -33,6 +33,6 @@ include 'dangnhap.php';
     </form><br />
     <a>Bạn chưa có tài khoản?</a>
     <a href="dangki.php">Ðăng kí ngay!</a><br />
-    <br /><a href="/football-blog">Trang chủ</a>
+    <br /><a href="../">Trang chủ</a>
 </body>
 </html>
