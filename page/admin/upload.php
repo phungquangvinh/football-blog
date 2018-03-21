@@ -15,7 +15,7 @@ if(empty($_SESSION['ten']) || empty($_SESSION['pass'])){
 
  $title = $write = $image = "";
  $id = $_GET["id"];
-$target_dir = "images/";
+$target_dir = "../user/images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 var_dump($target_file);
 $uploadOk = 1;

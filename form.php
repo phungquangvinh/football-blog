@@ -5,7 +5,7 @@
  * @copyright 2017
  */
  session_start();
- define("HOME", "http://localhost/football-blog");
+ define("HOME", "/football-blog");
 include ('config.php');
 
 $sql = "SELECT * FROM bai_viet";

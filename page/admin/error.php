@@ -15,6 +15,6 @@ echo $_SESSION['ten'];
     </head>
     <body>
         <p>Bạn không đủ quyền truy cập vào trang này!</p>
-        <a href="../../">Quay lại trang chủ!</a>
+        <a href="/football-blog">Quay lại trang chủ!</a>
     </body>
 </html>

@@ -34,7 +34,7 @@
       <div class="content">
             <?php while ($row = mysqli_fetch_array($ket_qua)){
            $image = $row["image"];
-                $abc = "http://localhost/football-blog/page/user/images/";
+                $abc = "page/user/images/";
                 $file = $abc. $image;
              ?>
         <div class="dichvu">

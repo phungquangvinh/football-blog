@@ -26,7 +26,7 @@ $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
         while ($row = mysqli_fetch_array($ketqua)){
             $title = $row["ten_giai_dau"];
             $image = $row["logo"];
-            $abc = "http://localhost/football-blog/page/themgiaidau/images/";
+            $abc = "page/themgiaidau/images/";
             $file = $abc. $image; 
         ?>
         <title><?php echo $title;?></title>
@@ -43,7 +43,7 @@ $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
                 echo $row["mo_ta"]."<br><br>";
                 echo "Địa điểm: ".$row["dia_diem"];?></p>
                 <?php }?>
-                <a href="/football-blog/page/themgiaidau/update.php?id=<?php echo $id;?>">
+                <a href="page/themgiaidau/update.php?id=<?php echo $id;?>">
                 Chỉnh sửa giải đấu</a><br /><br />
                 <a href="index.php">Quay về trang chủ</a>
             </div>  <hr>      
@@ -54,13 +54,13 @@ $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
                     $result = mysqli_query($connect, $sqli);
                     while ($row1 = mysqli_fetch_array($result)){
                     $image = $row1["image"];
-                    $abc = "http://localhost/football-blog/page/user/images/";
+                    $abc = "page/user/images/";
                     $file = $abc. $image;?>  
                 <div class="user">                                
                     <img src="<?= $file ?>" style="width: 300px;"/><br />
                     <h3><?php echo $row1["tieu_de"]."<br />";?></h3>
                     <?php echo $row1["bai_viet"]."<br /><br />";?>
-                    <a href="/football-blog/page/admin/kiemduyet.php?id=<?php echo $row1["id"];?>">
+                    <a href="page/admin/kiemduyet.php?id=<?php echo $row1["id"];?>">
                     Chỉnh sửa bài viết</a>                
                 </div><?php }?>                       
             </div>

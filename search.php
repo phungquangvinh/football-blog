@@ -54,7 +54,7 @@ include 'form.php';
     			<div class="content">
                     <?php while ($row2 = mysqli_fetch_array($timkiem)) {
                         $image = $row2["image"];
-                        $abc = "http://localhost/football-blog/page/user/images/";
+                        $abc = "page/user/images/";
                         $file = $abc. $image;
                     ?>                
                     <div class="dichvu">                    

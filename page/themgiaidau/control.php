@@ -4,7 +4,7 @@
  * @author GallerySoft.info
  * @copyright 2017
  */
- include 'config.php';
+ include '../../config.php';
  $title = $diadiem = $image = $mo_ta = "";
  $id = $_GET["id"];
  session_start();
@@ -39,7 +39,7 @@ if(isset($_POST["submit"])) {
         logo='$image', dia_diem='$diadiem' WHERE id='$id'";
         mysqli_query($connect, $sql);
         echo "Chỉnh sửa thành công!";?>
-        <br /><a href="http://localhost/football-blog/page/admin">Trở về trang quản trị!</a>
+        <br /><a href="../admin">Trở về trang quản trị!</a>
         <?php
     }
 }
@@ -58,14 +58,14 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
     echo "File của bạn không thể upload.<br>";
-    ?><a href="http://localhost/football-blog/page/user">Trở về trang blog!</a><?php
+    ?><a href="../admin">Trở về trang quản trị!</a><?php
 // if everything is ok, try to upload file
 }  else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "File ảnh ". basename( $_FILES["fileToUpload"]["name"]). " up thành công.<br>";
     } else {
         echo "Không thể up được file<br>";
-        ?><a href="http://localhost/football-blog/page/user">Trở về trang blog!</a><?php
+        ?><a href="../admin">Trở về trang quản trị!</a><?php
     }
 } 
 

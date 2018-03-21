@@ -4,12 +4,12 @@
  * @author pqvinh
  * @copyright 2017
  */
- include 'config.php';
+ include '../../config.php';
  session_start();
  if(empty($_SESSION['ten'])){
-    header("Location: ".HOME."/page");
+    header("Location: ../");
  } else if($_SESSION['ten']!='admin'){
-    header("Location: ".HOME."/page/admin/error.php");
+    header("Location: ../admin/error.php");
  }
 ?>
 <!doctype html>
@@ -20,9 +20,9 @@
 </head>
 <body>
     <p>Chào mừng '<?php echo $_SESSION['ten']; ?>' đến với trang Thêm giải đấu! 
-    <a href="destroy.php">Đăng xuất</a>!</p>
-    <a href="/football-blog/page/admin">Trở về trang quản trị</a><br /><br />
-    <a href="/football-blog">Trở về trang chủ</a>
+    <a href="../destroy.php">Đăng xuất</a>!</p>
+    <a href="../admin">Trở về trang quản trị</a><br /><br />
+    <a href="../../">Trở về trang chủ</a>
     <h3>Thêm giải đấu</h3>
     <p class="error">Dấu * là trường bắt buộc.</p>
     <form action="upload.php" method="post" name="image" enctype="multipart/form-data">
