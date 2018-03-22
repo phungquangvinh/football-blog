@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userErr = "Bạn phải nhập username!";
   } else {
     $user = test_input($_POST["user"]);
-    // check if name only contains letters and whitespace
+    // check if name only contains letters and whitespace 
     if (!preg_match("/^[a-zA-Z0-9_]*$/",$user)) {
       $userErr = "Username không hợp lệ!"; 
     }

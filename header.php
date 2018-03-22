@@ -43,8 +43,7 @@
 	<li class="dropdown">
 	  <span class="dropbtn">LIÊN HỆ</span>
 	  <div class="dropdown-content" style="width: 167px;">
-		<a href="page">
-        QUẢNG CÁO</a>
+		<a href="page">QUẢNG CÁO</a>
 		<a href="/vinh/t-electronics">LIÊN HỆ 2</a>
 		<a href="page/themgiaidau">THÊM GIẢI ĐẤU</a>
 	  </div>
