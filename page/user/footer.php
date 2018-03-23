@@ -1,3 +1,9 @@
+<?php
+	if(isset($_POST['submit'])){
+	    header("Location: ../dangki.php");
+	}
+?>
+
 <div class="image01">
 	<a href="#"><img src="images/20170421163138-vong-loai-u16-chau-a.jpg"
     style="width: 100%;height: 400px;"></a>
@@ -30,7 +36,7 @@
 			<li style="margin-top: 10px;"><a href="index.php">Vào forum</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ quảng cáo</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ 1</a></li>
-			<li style="margin-top: 10px;"><a href="/vinh/t-electronics">Liên hệ 2</a></li>
+			<li style="margin-top: 10px;"><a href="#">Liên hệ 2</a></li>
 			<li style="margin-top: 10px;"><a href="#">Liên hệ 3</a></li>
 		</ul>
 	</div>

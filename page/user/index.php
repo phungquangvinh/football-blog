@@ -8,9 +8,9 @@
 include '../../form.php';
 
  if(empty($_SESSION['ten'])){
-    header("Location: ".HOME."/page");
+    header("Location: ../");
  } else if($_SESSION['ten']=='admin'){
-    header("Location: ".HOME."/page/admin/error.php");
+    header("Location: ../admin/error.php");
  }
 ?>
 <!doctype html>
@@ -19,13 +19,13 @@ include '../../form.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User</title>
-    <link rel="stylesheet" type="text/css" href="/football-blog/css/style.css">  
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">  
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> 
     <!-- slideshow bootsrap -->
-    <link rel="stylesheet" href="/football-blog/css/bootstrap.min.css">
-    <script src="/football-blog/js/jquery.min.js"></script>
-    <script src="/football-blog/js/popper.min.js"></script>
-    <script src="/football-blog/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
     <!-- end slideshow -->
     <style> .error{color: #ff0000;}</style>
 </head>

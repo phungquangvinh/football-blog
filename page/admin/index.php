@@ -28,7 +28,7 @@ echo "<table border = '1px'>
 while ($row = mysqli_fetch_array($ket_qua)){     
     echo "<tr>";
       $image = $row["image"];
-      $abc = "http://localhost/football-blog/page/user/images/";
+      $abc = "../user/images/";
       $file = $abc. $image;
       echo "<td style='text-align: center'>".$row["user"]."</td>";
       echo "<td style='text-align: center'>".$row["competition"]."</td>";

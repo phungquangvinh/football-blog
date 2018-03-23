@@ -19,20 +19,22 @@ include 'dangnhap.php';
 </head>
 
 <body style="padding-left: 30px">
-    <h1>Ðăng nhập tài khoản</h1>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-        Tên nguời dùng: <input type="text" name="user"/>
-        <span class="error"> <?php echo $userErr;?></span>
-        <br><br>
-        Mật khẩu: <input type="password" name="matkhau"/>
-        <span class="error"> <?php echo $matkhauErr;?></span>
-        <br><br>
-        Luu mật khẩu: <input type="checkbox" name="checkbox"/>
-        <br><br>
-        <input type="submit" name="submit" value="Ðăng nhập"/> 
-    </form><br />
-    <a>Bạn chưa có tài khoản?</a>
-    <a href="dangki.php">Ðăng kí ngay!</a><br />
-    <br /><a href="../">Trang chủ</a>
+    <div id="content">
+        <h1>Ðăng nhập tài khoản</h1>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            Tên nguời dùng: <input type="text" name="user"/>
+            <span class="error"> <?php echo $userErr;?></span>
+            <br><br>
+            Mật khẩu: <input type="password" name="matkhau"/>
+            <span class="error"> <?php echo $matkhauErr;?></span>
+            <br><br>
+            Luu mật khẩu: <input type="checkbox" name="checkbox"/>
+            <br><br>
+            <input type="submit" name="submit" value="Ðăng nhập"/> 
+        </form><br />
+        <a>Bạn chưa có tài khoản?</a>
+        <a href="dangki.php">Ðăng kí ngay!</a><br />
+        <br /><a href="../">Trang chủ</a>
+    </div>
 </body>
 </html>

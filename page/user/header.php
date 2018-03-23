@@ -1,6 +1,6 @@
 <div class="background">			
 	<div class="logo">
-		<a href="/football-blog"><img src="images/79df3d3d98111bd1f41aae6e02b16742--messi-neymar.jpg"
+		<a href="../../"><img src="images/79df3d3d98111bd1f41aae6e02b16742--messi-neymar.jpg"
         style="width: 100px;"></a>
 	</div>		
 </div>
@@ -44,7 +44,7 @@
 	  <span class="dropbtn">LIÊN HỆ</span>
 	  <div class="dropdown-content" style="width: 167px;">
 	  	<a href="#">QUẢNG CÁO</a>
-		<a href="/vinh/t-electronics">LIÊN HỆ 2</a>
+		<a href="#">LIÊN HỆ 2</a>
 		<a href="../themgiaidau">THÊM GIẢI ĐẤU</a>
 	  </div>
 	</li>

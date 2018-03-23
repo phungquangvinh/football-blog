@@ -6,5 +6,5 @@
  */
  session_start();
  session_destroy();
-header("Location: http://localhost/football-blog/page");
+header("Location: ../page");
 ?>

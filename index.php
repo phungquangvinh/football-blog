@@ -5,6 +5,9 @@
    */
   
  include 'form.php';
+ if(isset($_POST['submit'])){
+    header("Location: page/dangki.php");
+}
 ?>
 <!doctype html>
 <html>
@@ -38,10 +41,9 @@
                 $file = $abc. $image;
              ?>
         <div class="dichvu">
-          <img src="<?= $file ?>" style="height: 200px;"/>                    
+          <img src="<?= $file ?>" style="max-width:320px; height: 200px;"/>                    
           <h3><?php echo $row["tieu_de"];?></h3>
-          <p><?php echo $row["bai_viet"];?></p>
-          <a href="page/admin">CHI TIẾT</a>
+          <a href="baiviet.php?baiviet=<?php echo $row["tieu_de"]; ?>">CHI TIẾT</a>
         </div><?php } ?>        
       </div>
       <div id="bando">
@@ -66,7 +68,9 @@
     </div>
   </div>
   <div class="footer">
-    <?php include 'footer.php';?>
+    <?php 
+        include 'footer.php';
+    ?>
   </div>
 </div>
 </body>

@@ -1,11 +1,13 @@
 <?php
 
 /**
- * @author GallerySoft.info
+ * @author GallerySoft.info 
  * @copyright 2017
  */
 include 'form.php';
-
+if(isset($_POST['submit'])){
+    header("Location: page/dangki.php");
+}
 ?>
 <!doctype html>
 <html>
@@ -16,11 +18,11 @@ include 'form.php';
 	<link rel="stylesheet" type="text/css" href="./css/style.css">	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> 
     <!-- slideshow bootsrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- end slideshow -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- end slideshow -->
 </head>
 <body>
     <div class="wrapper">
@@ -38,7 +40,7 @@ include 'form.php';
                     
                         // Nếu $search rỗng thì quay trở lại trang chủ.
                         if (empty($search)) {
-                            header("Location: ".HOME."");
+                            header("Location: index.php");
                         } else {
                             // Dùng câu lênh like trong sql và sứ dụng toán tử % của php để tìm kiếm dữ liệu chính xác hơn.
                             $query = "select * from bai_viet where tieu_de like '%$search%' OR bai_viet like '%$search%'";
@@ -60,8 +62,7 @@ include 'form.php';
                     <div class="dichvu">                    
                         <img src="<?= $file ?>" style="300px"/>                    
     					<h3><?php echo $row2["tieu_de"];?></h3>
-    					<p><?php echo $row2["bai_viet"];?></p>
-    					<a href="page/admin">CHI TIẾT</a>                    
+    					<a href="baiviet.php?baiviet=<?php echo $row2["tieu_de"]; ?>">CHI TIẾT</a>                    
                     </div>	<?php }}
                         else echo "<br><br>"."Không có kết quả tìm kiếm với từ <b>'$search'</b>";
                     }}?>			

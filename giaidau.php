@@ -1,12 +1,13 @@
 <?php
 
 /**
- * @author GallerySoft.info
+ * @author GallerySoft.info 
  * @copyright 2017
  */
-include 'config.php';
 include 'form.php';
-
+if(isset($_POST['submit'])){
+    header("Location: page/dangki.php");
+}
 $id = $_GET["giaidau"];
 $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
 
@@ -14,8 +15,8 @@ $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="stylesheet" type="text/css" href="./css/giaidau.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/giaidau.css">
         <!-- slideshow bootsrap -->
           <link rel="stylesheet" href="css/bootstrap.min.css">
           <script src="js/jquery.min.js"></script>
@@ -59,9 +60,7 @@ $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
                 <div class="user">                                
                     <img src="<?= $file ?>" style="width: 300px;"/><br />
                     <h3><?php echo $row1["tieu_de"]."<br />";?></h3>
-                    <?php echo $row1["bai_viet"]."<br /><br />";?>
-                    <a href="page/admin/kiemduyet.php?id=<?php echo $row1["id"];?>">
-                    Chỉnh sửa bài viết</a>                
+                    <a href="baiviet.php?baiviet=<?php echo $row1["tieu_de"]; ?>">CHI TIẾT</a>            
                 </div><?php }?>                       
             </div>
             <div id="bando">
