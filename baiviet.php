@@ -36,13 +36,14 @@
 </head>
 <body>
 	<div id="header">
-		<?php include 'header.php'; ?>
+		<?php include 'header.php'; ?><hr>
 	</div>
 	<div class="gioithieu">
 		<img src="<?= $file ?>" style="max-width: 800px; max-height: 400px;"/><br /><br />
 		<h3><?php echo $title; ?></h3><br />
 		<p>Ngày đăng: <?php echo $day; ?></p><br />
-		<p><?php echo $content; ?></p>
+		<p><?php echo $content; ?></p><hr>
+		<strong style="float: right;"><i><?php echo $abc['user']; ?></i></strong>
 	</div>
 	<?php } ?>
 	<div id="bando">

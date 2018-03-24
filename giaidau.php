@@ -58,7 +58,7 @@ $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
                     $abc = "page/user/images/";
                     $file = $abc. $image;?>  
                 <div class="user">                                
-                    <img src="<?= $file ?>" style="width: 300px;"/><br />
+                    <img src="<?= $file ?>" style="width: 360px;"/><br />
                     <h3><?php echo $row1["tieu_de"]."<br />";?></h3>
                     <a href="baiviet.php?baiviet=<?php echo $row1["tieu_de"]; ?>">CHI TIẾT</a>            
                 </div><?php }?>                       
