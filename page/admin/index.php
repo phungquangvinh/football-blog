@@ -37,8 +37,10 @@ while ($row = mysqli_fetch_array($ket_qua)){
       ?><td><img src="<?= $file ?>" style="width: 300px;"/></td><?php
       echo "<td style='text-align: center'>".$row["ngay_tao"]."</td>"; 
       ?>
-      <td style='text-align: center'><a href="kiemduyet.php?id=<?php echo $row["id"];?>">
-       Duyệt bài viết </a></td>
+      <td style='text-align: center'>
+        <a href="kiemduyet.php?id=<?php echo $row["id"];?>">Duyệt bài viết </a><br /><br />
+        <a href="del.php?id=<?php echo $row["id"]; ?>">Xóa bài viết</a>
+     </td>
        <?php 
     echo "</tr>";
 }
