@@ -46,6 +46,16 @@
 		<strong style="float: right;"><i><?php echo $abc['user']; ?></i></strong>
 	</div>
 	<?php } ?>
+	<div class="tabmenu">
+		<h1>Xem các tin bài khác:</h1>
+		<ul>
+			<?php
+				while ($a = mysqli_fetch_array($ket_qua)) {
+					?><li><a href="baiviet.php?baiviet=<?php echo $a["tieu_de"]; ?>"> >>> <?php echo $a["tieu_de"]; ?> </a></li><?php
+				}
+			?>
+		</ul>
+	</div>
 	<div id="bando">
         <?php include 'bando.php';?>
     </div>

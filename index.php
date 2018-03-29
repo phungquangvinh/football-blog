@@ -31,9 +31,9 @@
     </div>
   <div class="main">
     <div class="container">
-            <div class="title-dichvu">
-                <p>BÀI VIẾT HÀNG ĐẦU</p><hr>
-            </div>
+        <div class="title-dichvu">
+            <p>BÀI VIẾT HÀNG ĐẦU</p><hr>
+        </div>
       <div class="content">
             <?php while ($row = mysqli_fetch_array($ket_qua)){
            $image = $row["image"];

@@ -21,3 +21,12 @@ body
 	margin-right: 100px;
 	margin-bottom: 30px;
 }
+.tabmenu li{
+	display: -webkit-box;
+}
+.tabmenu a{
+	color: #28a745;
+}
+.tabmenu a:hover {
+	color: #ffc107;
+}
