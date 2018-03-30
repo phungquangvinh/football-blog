@@ -1,6 +1,6 @@
 <?php
 	include 'form.php';
-
+	include 'header.php';
 	if(isset($_POST['submit'])){
 	    header("Location: page/dangki.php");
 	}
@@ -35,9 +35,6 @@
 	  <title><?php echo $title; ?></title>
 </head>
 <body>
-	<div id="header">
-		<?php include 'header.php'; ?><hr>
-	</div>
 	<div class="gioithieu">
 		<img src="<?= $file ?>" style="max-width: 800px; max-height: 400px;"/><br /><br />
 		<h3><?php echo $title; ?></h3><br />
@@ -45,13 +42,13 @@
 		<p><?php echo $content; ?></p><hr>
 		<strong style="float: right;"><i><?php echo $abc['user']; ?></i></strong>
 	</div>
-	<?php } ?>
+	<?php } ?><br /><br />
 	<div class="tabmenu">
 		<h1>Xem các tin bài khác:</h1>
 		<ul>
 			<?php
 				while ($a = mysqli_fetch_array($ket_qua)) {
-					?><li><a href="baiviet.php?baiviet=<?php echo $a["tieu_de"]; ?>"> >>> <?php echo $a["tieu_de"]; ?> </a></li><?php
+					?><li><a href="baiviet.php?baiviet=<?php echo $a["tieu_de"]; ?>">>>> <?php echo $a["tieu_de"]; ?> </a></li><?php
 				}
 			?>
 		</ul>

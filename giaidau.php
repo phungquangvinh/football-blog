@@ -5,9 +5,11 @@
  * @copyright 2017
  */
 include 'form.php';
+include 'header.php';
 if(isset($_POST['submit'])){
     header("Location: page/dangki.php");
 }
+
 $id = $_GET["giaidau"];
 $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
 
@@ -34,20 +36,16 @@ $ketqua = mysqli_query($connect, "SELECT * FROM giai_dau where id='$id'");
     </head>
     <body>
         <div class="wrapper">
-            <div id="header">
-                <?php include 'header.php';?>
-            </div>
             <div class="gioithieu">
                 <h3>Tên giải đấu: <?php echo $title;?></h3><hr>
                 <img src="<?= $file ?>" style="width: 750px;"/><br />
                 <p style="width: 750px;"><?php    
                 echo $row["mo_ta"]."<br><br>";
-                echo "Địa điểm: ".$row["dia_diem"];?></p>
-                <?php }?>
+                echo "Địa điểm: ".$row["dia_diem"];?></p>                
                 <a href="page/themgiaidau/update.php?id=<?php echo $id;?>">
-                Chỉnh sửa giải đấu</a><br /><br />
+                Chỉnh sửa giải đấu</a><br />
                 <a href="index.php">Quay về trang chủ</a>
-            </div>  <hr>      
+            </div><hr><?php }?><br /><br />      
             <div class="baiviet">
                 <h3>Danh sách bài viết:</h3> 
                 <?php
