@@ -36,8 +36,8 @@
 	<li class="dropdown">
 	  <span class="dropbtn">BLOG</span>
 	  <div class="dropdown-content">
-		<a href="../">ĐĂNG NHẬP</a>
 		<a href="index.php">VÀO FORUM</a>
+		<a href="../destroy.php">ĐĂNG XUẤT</a>
 	  </div>
 	</li>
 	<li class="dropdown">
@@ -45,7 +45,7 @@
 	  <div class="dropdown-content" style="width: 167px;">
 	  	<a href="#">QUẢNG CÁO</a>
 		<a href="#">LIÊN HỆ 2</a>
-		<a href="../themgiaidau">THÊM GIẢI ĐẤU</a>
+		<a href="info.php">XEM INFO CÁ NHÂN</a>
 	  </div>
 	</li>
 </ul>
