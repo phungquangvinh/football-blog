@@ -30,10 +30,10 @@ $id = mysqli_query($connect, "SELECT * FROM user where username='$user'");
 			<p>Tên tài khoản: <b><?php echo $row['username']; ?></b></p>
 			<p>Email đăng kí: <b><?php echo $row['email']; ?></b></p>
 			<p>Mật khẩu: <b><?php echo $row['password']; ?></b></p>
-			<p>Ngày tham gia: <b><?php echo $row['create_at']; ?></b></p><?php
+			<p>Ngày tham gia: <b><?php echo $row['create_at']; ?></b></p>
+			<a href="update.php?id=<?php echo $row['id']; ?>">Chỉnh sửa thông tin cá nhân</a><?php
 		}
 	?>
-	<a href="index.php">Về trang blog</a><br />
-	<a href="update.php">Chỉnh sửa thông tin cá nhân</a>
+	<br /><a href="index.php">Về trang blog</a><br />
  </body>
  </html>
